@@ -46,6 +46,29 @@ body {
   max-width: 300px;
 }
 
+/* Contact Details Section */
+.contact-details {
+  margin-top: 2em;
+}
+
+.contact-details h3 {
+  color: #00008B; /* Deep Blue */
+  margin-bottom: 1em;
+}
+
+.contact-details p {
+  margin: 0.5em 0;
+}
+
+.contact-details a {
+  color: #8B0000; /* Dark Red */
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
 /* Footer Styles */
 .footer {
   text-align: center;
