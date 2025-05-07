@@ -11,7 +11,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  position: relative;
 }
 
 /* Header Styles */
@@ -23,12 +24,15 @@ body {
   position: fixed;
   top: 0;
   text-align: center;
+  z-index: 1000;
 }
 
 /* Maintenance Section Styles */
 .maintenance-section {
-  margin-top: 6em;
+  margin-top: 8em; /* To account for the fixed header */
   text-align: center;
+  padding: 2em;
+  flex-grow: 1;
 }
 
 .maintenance-section h2 {
@@ -44,6 +48,7 @@ body {
 .maintenance-image img {
   width: 50%;
   max-width: 300px;
+  margin-bottom: 2em;
 }
 
 /* Contact Details Section */
@@ -58,11 +63,13 @@ body {
 
 .contact-details p {
   margin: 0.5em 0;
+  line-height: 1.5em;
 }
 
 .contact-details a {
   color: #8B0000; /* Dark Red */
   text-decoration: none;
+  font-weight: bold;
 }
 
 .contact-details a:hover {
@@ -76,6 +83,6 @@ body {
   background-color: #8B0000; /* Dark Red */
   color: white;
   width: 100%;
-  position: fixed;
-  bottom: 0;
+  position: relative; /* Changed from fixed to relative */
+  margin-top: 2em;
 }
