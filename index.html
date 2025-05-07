@@ -3,55 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Welcome to TS ISPAT PRIVATE LIMITED! Contact us, make queries, and learn about our services.">
   <title>TS ISPAT PRIVATE LIMITED</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to TS ISPAT PRIVATE LIMITED</h1>
-    <nav>
-      <a href="#about">About Us</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="header">
+    <h1>TS ISPAT PRIVATE LIMITED</h1>
+    <p>Precision, Quality, and Excellence in Hot Rolling Mills Manufacturing</p>
   </header>
-  
+
   <main>
-    <section id="about">
-      <h2>About Us</h2>
-      <p>Learn about our mission, vision, and values.</p>
+    <section class="about-section">
+      <h2>About Our Hot Rolling Mills</h2>
+      <p>At TS ISPAT PRIVATE LIMITED, we specialize in manufacturing high-quality hot rolling mills designed to meet the rigorous demands of the steel industry. Our mills ensure precision, durability, and efficiency, making us a trusted partner in the field.</p>
+      <div class="image-gallery">
+        <img src="image1.jpg" alt="Hot Rolling Mill 1" class="gallery-image">
+        <img src="image2.jpg" alt="Hot Rolling Mill 2" class="gallery-image">
+        <img src="image3.jpg" alt="Hot Rolling Mill 3" class="gallery-image">
+      </div>
     </section>
-    
-    <section id="services">
-      <h2>Our Services</h2>
-      <p>Discover the amazing services we offer to help your business grow.</p>
-    </section>
-    
-    <section id="contact">
+
+    <section class="contact-section">
       <h2>Contact Us</h2>
-      <form id="contact-form">
+      <p>If you have any queries or need assistance, feel free to reach out to us.</p>
+      <form id="contactForm" class="contact-form">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name" placeholder="Your Full Name" required>
         
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" placeholder="Your Mobile Number" pattern="[0-9]{10}" required>
         
-        <label for="contact-number">Contact Number:</label>
-        <input type="tel" id="contact-number" name="contact-number" pattern="[0-9]{10}" placeholder="Enter 10-digit number" required>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
         
         <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
+        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
         
-        <button type="submit">Send</button>
+        <button type="submit">Submit</button>
       </form>
     </section>
   </main>
-  
-  <footer>
+
+  <footer class="footer">
     <p>&copy; 2025 TS ISPAT PRIVATE LIMITED. All rights reserved.</p>
   </footer>
-  
+
   <script src="script.js"></script>
 </body>
 </html>
