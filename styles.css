@@ -17,7 +17,7 @@ body {
 
 /* Header Styles */
 .header {
-  background-color: #8B0000; /* Dark Red */
+  background-color: #333333; /* Dark Gray */
   color: white;
   width: 100%;
   padding: 1.5em 0;
@@ -25,6 +25,24 @@ body {
   top: 0;
   text-align: center;
   z-index: 1000;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.header h1 {
+  font-size: 1.8em;
+  margin: 0;
+  color: #8B0000; /* Dark Red */
 }
 
 /* Maintenance Section Styles */
@@ -57,7 +75,7 @@ body {
 }
 
 .contact-details h3 {
-  color: #00008B; /* Deep Blue */
+  color: #333333; /* Dark Gray */
   margin-bottom: 1em;
 }
 
@@ -80,7 +98,7 @@ body {
 .footer {
   text-align: center;
   padding: 1em 0;
-  background-color: #8B0000; /* Dark Red */
+  background-color: #333333; /* Dark Gray */
   color: white;
   width: 100%;
   position: relative; /* Changed from fixed to relative */
